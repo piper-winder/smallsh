@@ -1,0 +1,118 @@
+PRE-SCRIPT INFO
+  Grading Script PID: 265911
+  Note: your smallsh will report a different PID when evaluating $$
+: BEGINNING TEST SCRIPT
+: 
+: --------------------
+: Using comment (5 points if only next prompt is displayed next)
+: : 
+: 
+: --------------------
+: ls (10 points for returning dir contents)
+: junk
+junk2
+mytestresults
+p3testscript
+README.md
+sh.c
+shell
+smallsh
+: 
+: 
+: --------------------
+: ls out junk
+: : 
+: 
+: --------------------
+: cat junk (15 points for correctly returning contents of junk)
+: junk
+junk2
+mytestresults
+p3testscript
+README.md
+sh.c
+shell
+smallsh
+: 
+: 
+: --------------------
+: wc in junk (15 points for returning correct numbers from wc)
+:  8  8 67
+: 
+: 
+: --------------------
+: wc in junk out junk2; cat junk2 (10 points for returning correct numbers from wc)
+: :  8  8 67
+: 
+: 
+: --------------------
+: test -f badfile (10 points for returning error value of 1, note extraneous &)
+: : exit value 1
+: 
+: 
+: --------------------
+: wc in badfile (10 points for returning text error)
+: open input file: No such file or directory
+: 
+: 
+: --------------------
+: badfile (10 points for returning text error)
+: execvp: No such file or directory
+: 
+: 
+: --------------------
+: sleep 100 background (10 points for returning process ID of sleeper)
+: background pid is 265966
+: 
+: 
+: --------------------
+: pkill -signal SIGTERM sleep (10 points for pid of killed process, 10 points for signal)
+: (Ignore message about Operation Not Permitted)
+: pkill: killing pid 209532 failed: Operation not permitted
+pkill: killing pid 263042 failed: Operation not permitted
+pkill: killing pid 263835 failed: Operation not permitted
+pkill: killing pid 264783 failed: Operation not permitted
+pkill: killing pid 265545 failed: Operation not permitted
+pkill: killing pid 265606 failed: Operation not permitted
+pkill: killing pid 265670 failed: Operation not permitted
+: 
+: 
+: --------------------
+: sleep 1 background (10 pts for pid of bg ps when done, 10 for exit value)
+: background pid is 265978
+: : 
+: 
+: --------------------
+: pwd
+: /nfs/stak/users/winderp/cs374/smallsh
+: 
+: 
+: --------------------
+: cd
+: : 
+: 
+: --------------------
+: pwd (10 points for being in the HOME dir)
+: /nfs/stak/users/winderp
+: 
+: 
+: --------------------
+: mkdir testdir265916
+: : 
+: 
+: --------------------
+: cd testdir265916
+: : 
+: 
+: --------------------
+: pwd (5 points for being in the newly created dir)
+: /nfs/stak/users/winderp/testdir265916
+: --------------------
+: Testing foreground-only mode (20 points for entry & exit text AND ~5 seconds between times)
+: 
+Entering foreground only mode (& is now ignored)
+: Wed May 13 02:59:40 PM PDT 2026
+: : Wed May 13 02:59:45 PM PDT 2026
+: 
+Exiting foreground only mode
+: 

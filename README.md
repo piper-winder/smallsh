@@ -1,2 +1,1 @@
-# smallsh
-repo for assignment 3: smallsh in CS370
+gcc sh.c -o smallsh
